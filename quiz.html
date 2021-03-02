@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="timer">
+        <h1 id="min">03</h1>
+        <h1>:</h1>
+        <h1 id="sec">00</h1>
+    </div>
+
+    <div class="main">
+        <div class="text">
+            <h2>COMPUTER QUIZ</h2>
+        </div>
+        <div>
+            <h2 id="ques"></h2>
+        </div>
+        <div class="optdiv">
+
+            <div class="opt">
+                <label>
+                    <input type="radio" onclick="enable()" name="option" value="1"><span id="opt1"></span>
+                </label>
+            </div>
+    
+            <div class="opt">
+                <label>
+                    <input type="radio" onclick="enable()" name="option" value="2"><span id="opt2"></span>
+                </label>
+            </div>
+    
+    
+    
+            <div class="opt">
+                <label>
+                    <input type="radio" onclick="enable()" name="option" value="3"><span id="opt3"></span>
+                </label>
+            </div>
+    
+            <div class="opt">
+    
+                <label>
+                    <input type="radio" onclick="enable()" name="option" value="4"><span id="opt4"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <div>
+            <button class="btn" disabled onclick="nextques()" id="nextbtn">Next Question</button>
+            <button class="result-btn" disabled onclick="result()" id="result">GET RESULT</button>
+        </div>
+
+
+    </div>
+
+    <div>
+        
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

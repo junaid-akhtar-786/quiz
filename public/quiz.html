@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="bigDiv">
+    <div class="timer">
+        <p id="min">03</p>
+        <p>:</p>
+        <p id="sec">00</p>
+    </div>
+
+    <div class="main">
+        <div class="text">
+            <h2>COMPUTER QUIZ</h2>
+        </div>
+        <div>
+            <h2 id="ques"></h2>
+        </div>
+        <div class="optdiv">
+
+            <div class="opt">
+                <label>
+                    <input type="radio" onclick="enable()" name="option" value="1"><span id="opt1"></span>
+                </label>
+            </div>
+    
+            <div class="opt">
+                <label>
+                    <input type="radio" onclick="enable()" name="option" value="2"><span id="opt2"></span>
+                </label>
+            </div>
+    
+    
+    
+            <div class="opt">
+                <label>
+                    <input type="radio" onclick="enable()" name="option" value="3"><span id="opt3"></span>
+                </label>
+            </div>
+    
+            <div class="opt">
+    
+                <label>
+                    <input type="radio" onclick="enable()" name="option" value="4"><span id="opt4"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <div>
+            <button class="btn" disabled onclick="nextques()" id="nextbtn">Next Question</button>
+            <button class="result-btn" disabled onclick="result()" id="resultbtn">GET RESULT</button>
+        </div>
+
+
+    </div>
+</div>
+
+    <div class="hide" id="result">
+        <div class="text">
+            <h2>Quiz Result</h2>
+        </div>
+    <center>    <table>
+    <tr>
+    <td>Total Question</td>
+    <td>10</td>
+    </tr>
+<tr>
+    <td>Correct Answers</td>
+    <td id="right"></td>
+</tr>
+<tr>
+    <td>Marks</td>
+    <td id="score"></td>
+</tr>
+<tr>
+    <td>Percentage</td>
+    <td id="perg"></td>
+</tr>
+        </table> </center>
+        
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
